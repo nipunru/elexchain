@@ -1,0 +1,15 @@
+{
+  "messages.error.empty_phone_number": "Please enter phone number.",
+  "messages.error.empty_password": "Please enter a password.",
+  "messages.error.invalid_master_data_type": "Invalid Type.",
+  "messages.error.number_already_in_use": "This phone number is already in use.",
+  "messages.error.email_already_in_use": "This email is already in use.",
+  "messages.error.duplicate_key_entry": "Duplicate Key Entry.",
+  "messages.error.verify_phone": "Please verify your phone number.",
+  "messages.success.new_user_created": "Successfully created new user.",
+  "messages.success.user_updated": "Successfully user updated.",
+  "messages.success.phone_verified": "Phone Number verified.",
+  "messages.success.verification_code_sent": "Verification Code Sent.",
+  "enum.my_gender.male": "Male",
+  "enum.my_gender.female": "Female"
+}

@@ -1,0 +1,79 @@
+.add-candidate-container {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* to vertically center align items */
+  width: 100%;
+}
+
+.label-ac {
+  margin-right: 1em;
+}
+
+.input-ac {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4pxrgb (170, 87, 87);
+  margin-top: 0.5rem;
+}
+
+.btn-add {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.form-row > button {
+  /* Add Candidate Button */
+  flex: 1.5 1 15%;
+}
+.candidate-list-container {
+  margin-top: 20px;
+}
+
+.no-candidates-alert {
+  padding: 10px;
+  text-align: center;
+  color: #9e9e9e;
+}
+
+.candidate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* optional, for smoother color transition */
+}
+
+.left-content {
+  flex: 1; /* take up as much space as possible */
+}
+
+.slogan-text {
+  font-size: 0.9em; /* make it smaller than regular text */
+  color: #666; /* some darker shade for the slogan, adjust as needed */
+  margin-top: 5px;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+}

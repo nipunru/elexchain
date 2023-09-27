@@ -1,0 +1,39 @@
+.footer,
+.footer-block {
+  padding: 11px;
+  height: 40px;
+  width: 100%;
+  overflow: auto;
+}
+.footer {
+  background-color: #4286f479;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  color: #fff;
+  font-size: 0.9em;
+}
+.footer-block {
+  display: block;
+}
+
+a.profile {
+  color: #000;
+  text-decoration: underline;
+}
+a.profile:hover {
+  color: #343538;
+  text-decoration: underline;
+}
+.footer-container {
+  /* padding: 7px; */
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}

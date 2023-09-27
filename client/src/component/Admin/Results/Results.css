@@ -1,0 +1,107 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {
+  background-color: white;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.container-winner {
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.winner-title {
+  text-align: center;
+  font-size: 24px;
+  color: gold;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.winner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.candidate-number {
+  font-size: 50px;
+  color: #333;
+  flex-basis: 10%;
+  text-align: center;
+}
+
+.candidate-details {
+  flex-basis: 60%;
+}
+
+.party-slogan {
+  display: flex;
+  align-items: center;
+}
+
+.party-box {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+}
+
+.winner-slogan {
+  color: #666;
+}
+
+.vote-count {
+  font-size: 48px;
+  color: #333;
+  flex-basis: 20%;
+  text-align: right;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+@media all and (max-width: 850px) {
+  .container-winner {
+    width: 700px;
+  }
+}
+@media all and (max-width: 750px) {
+  .container-winner {
+    width: 600px;
+  }
+}
+@media all and (max-width: 650px) {
+  .container-winner {
+    width: 400px;
+  }
+}
+@media all and (max-width: 400px) {
+  .container-winner {
+    width: 300px;
+  }
+}

@@ -1,0 +1,19 @@
+.success-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.icon-wrapper {
+  font-size: 5em; /* Adjust the size of the icon */
+  color: green; /* You can adjust the color of the success icon */
+}
+
+.success-message {
+  text-align: center;
+  font-size: 1.2em; /* Adjust font size */
+  margin-top: 20px; /* Add some spacing between the icon and the message */
+}

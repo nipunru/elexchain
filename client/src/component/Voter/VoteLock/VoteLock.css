@@ -1,0 +1,63 @@
+.otpContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.otpTitle {
+  margin-bottom: 15px;
+}
+
+.otpInputContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.otpBox {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.numberPad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 280px;
+}
+
+.numberPadButton {
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgb(205, 205, 205);
+  color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+
+  /* Making the last two buttons invisible */
+  visibility: visible;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70px;
+}
+
+.numberPadButton:hover {
+  background-color: #e0e0e0;
+}

@@ -1,0 +1,7 @@
+{
+	"messages.success.new_user_created": "messages.success.new_user_created",
+	"messages.error.duplicate_key_entry": "messages.error.duplicate_key_entry",
+	"messages.success.login": "messages.success.login",
+	"messages.success.user_details": "messages.success.user_details",
+	"messages.success.user_updated": "messages.success.user_updated"
+}
