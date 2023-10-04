@@ -253,9 +253,9 @@ class Voting extends Component {
 
   castVote = async (id) => {
     const txData = {
-      to: this.state.contractAddress, // Contract address
+      to: this.state.contractAddress,
       gas: 1000000,
-      data: this.state.ElectionInstance.methods.vote(id).encodeABI(), // ABI encoded transaction data
+      data: this.state.ElectionInstance.methods.vote(id).encodeABI(),
     };
 
     const signedTx = await this.state.web3.eth.accounts.signTransaction(
@@ -266,8 +266,6 @@ class Voting extends Component {
     const voteReciept = await this.state.web3.eth.sendSignedTransaction(
       signedTx.rawTransaction
     );
-
-    console.dir(voteReciept);
 
     if (!voteReciept.status) {
       this.props.alert.error("Something went wrong! Please contact Admin");

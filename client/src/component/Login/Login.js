@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import axios from "axios"; // You need to install axios using npm install axios
 
 import "./Login.css";
+import logo from "./logo.png";
 
 export default function Login(props) {
   const [email, setEmail] = useState("");
@@ -45,6 +46,7 @@ export default function Login(props) {
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit} className="login-form">
+        <img src={logo} alt="Logo" className="login-logo" />
         <h2>Login</h2>
         {error && <p className="error">{error}</p>}
         <input
