@@ -1,7 +1,16 @@
 {
-	"messages.success.new_user_created": "messages.success.new_user_created",
-	"messages.error.duplicate_key_entry": "messages.error.duplicate_key_entry",
-	"messages.success.login": "messages.success.login",
-	"messages.success.user_details": "messages.success.user_details",
-	"messages.success.user_updated": "messages.success.user_updated"
+  "messages.success.new_user_created": "New usercreated",
+  "messages.error.duplicate_key_entry": "Duplicate key entry",
+  "messages.success.login": "Successfully login",
+  "messages.success.user_details": "User details",
+  "messages.success.user_updated": "User updated successfully",
+  "messages.error.number_already_in_use": "Number already in use",
+  "messages.error.email_already_in_use": "Email already in use",
+  "messages.success.phone_verified": "messages.success.phone_verified",
+  "messages.success.verification_code_sent": "messages.success.verification_code_sent",
+  "messages.success.reset_code_sent": "Reset code sent successfully.",
+  "messages.error.empty_password": "messages.error.empty_password",
+  "messages.success.password_changed": "Password changed successfully",
+  "messages.error.invalid_reset_code": "Invalid reset code",
+  "messages.error.password_changed": "Error in password changed"
 }

@@ -10,7 +10,6 @@ const {
 const { locales } = require("../locales/index");
 const CONFIG = require("../config/config");
 const { User } = require("../models/index");
-const SqsService = require("../services/sqs.service");
 
 /**
  * Sign Up new user
@@ -65,12 +64,12 @@ const profileUpdate = async function (req, res) {
   user = req.user;
   let data = req.body;
 
-  delete data["email"]
-  delete data["phone"]
-  delete data["password"]
-  delete data["is_email_verified"]
-  delete data["email_verification_code"]
-  delete data["reset_password_code"]
+  delete data["email"];
+  delete data["phone"];
+  delete data["password"];
+  delete data["is_email_verified"];
+  delete data["email_verification_code"];
+  delete data["reset_password_code"];
 
   user.set(data);
 
@@ -141,7 +140,7 @@ const login = async function (req, res) {
   }
 
   let token = user.getJWT();
-  let level = user.email == "commissioner@elections.lk" ? 1 : 2
+  let level = user.email == "commissioner@elections.lk" ? 1 : 2;
 
   if (user && !user.is_email_verified) {
     return ReE(res, null, ResponseCode.SUCCESS_ACCEPTED, null, {
@@ -326,10 +325,6 @@ const logout = async function (req, res) {
   if (err) {
     return ReE(res, err, ResponseCode.SUCCESS_ACCEPTED);
   }
-
-  //Revoke JWT
-  const jwt = req.headers.authorization;
-  await new SqsService().getInstance().revokeToken(jwt);
 
   return ReS(
     res,

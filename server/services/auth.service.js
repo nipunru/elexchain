@@ -1,7 +1,6 @@
 const { User } = require("../models/index");
 const { UserHelper } = require("../helpers/user.helper");
 const { to, TE, bbCode } = require("./util.service");
-const SqsService = require("./sqs.service");
 const userHelper = require("../helpers/user.helper");
 const { log } = require("./log.service");
 const CONFIG = require("../config/config");

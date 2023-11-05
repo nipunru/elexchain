@@ -36,9 +36,20 @@ module.exports.bbCode = bbCode;
 
 module.exports.to = async (promise) => {
   let err, res;
-  [err, res] = await to(promise);
-  if (err) return [pe(err)];
 
+  if (!promise || typeof promise.then !== "function") {
+    // This will catch if 'promise' is undefined or not a promise because it lacks 'then'
+    err = new TypeError("Somethig went wrong!");
+    return [err, undefined];
+  }
+
+  try {
+    res = await promise;
+  } catch (error) {
+    err = error;
+  }
+
+  if (err) return [pe(err)];
   return [null, res];
 };
 
@@ -120,4 +131,4 @@ module.exports.TE = TE = function (err_message, is_log) {
 module.exports.isValidEmail = function isValidEmail(email) {
   const regex = /^[a-zA-Z0-9._-]+@elections\.lk$/;
   return regex.test(email);
-}
+};
